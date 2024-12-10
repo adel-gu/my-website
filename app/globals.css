@@ -3,19 +3,369 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color styles */
+  --alice--blue: rgba(245, 250, 255, 1);
+  --alto: rgba(216, 216, 216, 1);
+  --alto: rgba(221, 221, 221, 1);
+
+  --amour: rgba(251, 253, 255, 1);
+  --amour-75: rgba(251, 253, 255, 0.75);
+
+  --aqua--spring: rgba(251, 253, 255, 1);
+  --aqua--spring: rgba(242, 252, 245, 1);
+  --aqua--spring-75: rgba(251, 253, 255, 0.75);
+  --azure--radiance: rgba(0, 145, 255, 1);
+  --azure--radiance: rgba(0, 144, 255, 1);
+  --azure--radiance: rgba(0, 129, 241, 1);
+  --bastille: rgba(27, 20, 29, 1);
+  --bianca: rgba(251, 253, 255, 1);
+  --bianca-75: rgba(251, 253, 255, 0.75);
+  --big--stone: rgba(15, 27, 45, 1);
+  --biloba--flower: rgba(191, 122, 240, 1);
+  --biloba--flower: rgba(211, 180, 237, 1);
+  --bittersweet: rgba(255, 99, 105, 1);
+  --black: rgba(0, 0, 0, 1);
+  --black: rgba(5, 5, 5, 1);
+  --black-2: rgba(0, 0, 0, 0.019999999552965164);
+  --black--bean: rgba(12, 31, 23, 1);
+  --blue--zodiac: rgba(16, 42, 76, 1);
+
+  --brilliant--rose: rgba(246, 92, 182, 1);
+
+  --brown--pod: rgba(43, 20, 0, 1);
+  --bush: rgba(17, 49, 35, 1);
+  --carnation: rgba(242, 85, 90, 1);
+  --cedar: rgba(56, 19, 22, 1);
+  --celtic: rgba(15, 41, 30, 1);
+  --celtic: rgba(21, 50, 38, 1);
+  --cerise: rgba(214, 64, 159, 1);
+  --cerise: rgba(227, 75, 169, 1);
+  --cerise: rgba(209, 49, 151, 1);
+  --cerise: rgba(209, 49, 151, 1);
+  --chetwode--blue: rgba(114, 137, 218, 1);
+  --chilean--fire: rgba(247, 104, 8, 1);
+
+  --clementine: rgba(237, 95, 0, 1);
+  --cocoa--bean: rgba(72, 26, 29, 1);
+  --cod--gray: rgba(28, 26, 23, 1);
+  --cod--gray: rgba(21, 21, 21, 1);
+  --cod--gray: rgba(23, 23, 23, 1);
+  --cod--gray-25: rgba(10, 10, 10, 0.25);
+  --cornflower--blue: rgba(94, 176, 239, 1);
+
+  --crusta: rgba(171, 147, 124, 1);
+
+  --dodger--blue: rgba(54, 158, 255, 1);
+  --dodger--blue: rgba(82, 169, 255, 1);
+  --dove--gray: rgba(98, 98, 98, 1);
+  --dove--gray: rgba(108, 108, 108, 1);
+
+  --dull--lavender: rgba(190, 147, 228, 1);
+  --dune: rgba(51, 46, 41, 1);
+  --emerald: rgba(76, 195, 138, 1);
+  --eminence: rgba(95, 45, 132, 1);
+  --emperor: rgba(84, 84, 84, 1);
+
+  --eucalyptus: rgba(41, 151, 100, 1);
+  --frostee: rgba(221, 243, 228, 1);
+  --fuchsia--blue: rgba(142, 78, 198, 1);
+  --fuchsia--blue: rgba(132, 69, 187, 1);
+  --gallery: rgba(225, 240, 255, 1);
+  --gallery: rgba(255, 232, 215, 1);
+  --golden--sand: rgba(239, 211, 108, 1);
+  --gondola: rgba(31, 19, 21, 1);
+  --gondola: rgba(41, 20, 21, 1);
+  --gondola: rgba(31, 18, 27, 1);
+  --gondola: rgba(39, 20, 33, 1);
+  --gorse: rgba(239, 211, 108, 1);
+  --graphite: rgba(31, 18, 6, 1);
+  --gray: rgba(126, 126, 126, 1);
+  --gray: rgba(133, 133, 133, 1);
+  --gray: rgba(128, 128, 128, 1);
+
+  --green--pea: rgba(27, 84, 58, 1);
+  --half--spanish--white: rgba(254, 234, 221, 1);
+  --hit--pink: rgba(255, 179, 129, 1);
+  --jewel: rgba(24, 121, 78, 1);
+  --jordy--blue: rgba(150, 199, 242, 1);
+  --jungle--green: rgba(48, 164, 108, 1);
+  --karry: rgba(255, 232, 215, 1);
+  --kobi: rgba(236, 173, 212, 1);
+
+  --madison: rgba(13, 56, 104, 1);
+  --mercury: rgba(231, 231, 231, 1);
+  --mercury: rgba(206, 231, 254, 1);
+  --mexican--red: rgba(170, 36, 41, 1);
+  --mine--shaft: rgba(35, 35, 35, 1);
+  --mine--shaft: rgba(50, 50, 50, 1);
+  --mine--shaft: rgba(40, 40, 40, 1);
+  --neon--carrot: rgba(255, 139, 62, 1);
+
+  --onahau: rgba(206, 231, 254, 1);
+  --paco: rgba(69, 30, 17, 1);
+  --pampas: rgba(221, 243, 228, 1);
+  --peru--tan: rgba(118, 50, 5, 1);
+  --pippin: rgba(243, 231, 252, 1);
+  --prussian--blue: rgba(0, 37, 77, 1);
+  --racing--green: rgba(13, 25, 18, 1);
+  --red: rgba(255, 0, 0, 1);
+  --red--violet: rgba(167, 24, 115, 1);
+  --red--violet: rgba(205, 29, 141, 1);
+  --remy: rgba(234, 246, 255, 1);
+  --remy: rgba(234, 246, 255, 1);
+  --remy: rgba(234, 246, 255, 1);
+
+  --revolver: rgba(58, 30, 72, 1);
+  --revolver: rgba(34, 21, 39, 1);
+  --rose--white: rgba(251, 253, 255, 1);
+  --rose--white-75: rgba(251, 253, 255, 0.75);
+
+  --royal--purple: rgba(121, 58, 175, 1);
+  --royal--purple: rgba(121, 58, 175, 1);
+  --sail: rgba(183, 217, 248, 1);
+  --sandrift: rgba(171, 147, 124, 1);
+  --sandrift: rgba(171, 147, 124, 1);
+
+  --sea--pink: rgba(235, 144, 145, 1);
+  --selago: rgba(234, 246, 255, 1);
+  --selago: rgba(234, 246, 255, 1);
+  --selago: rgba(242, 252, 245, 1);
+  --selago: rgba(243, 231, 252, 1);
+  --shocking: rgba(227, 142, 195, 1);
+  --silver--chalice: rgba(165, 165, 165, 1);
+  --silver--rust: rgba(208, 197, 195, 1);
+  --silver--tree: rgba(91, 185, 140, 1);
+  --solitude: rgba(234, 246, 255, 1);
+  --solitude: rgba(234, 246, 255, 1);
+  --solitude: rgba(225, 240, 255, 1);
+  --spring--wood: rgba(245, 250, 255, 1);
+  --studio: rgba(132, 69, 187, 1);
+
+  --tara: rgba(243, 231, 252, 1);
+  --taupe: rgba(60, 52, 42, 1);
+  --tundora: rgba(66, 66, 66, 1);
+  --tutu: rgba(251, 253, 255, 1);
+  --tutu-75: rgba(251, 253, 255, 0.75);
+
+  --venice--blue: rgba(10, 68, 129, 1);
+  --vista--blue: rgba(146, 206, 172, 1);
+  --vulcan: rgba(15, 23, 32, 1);
+  --vulcan-75: rgba(15, 23, 32, 0.75);
+  --wewak: rgba(243, 174, 175, 1);
+  --white: rgba(255, 255, 255, 1);
+  --white-02: rgba(255, 255, 255, 0.0020000000949949026);
+  --white-25: rgba(255, 255, 255, 0.25);
+  --white--alabaster: rgba(255, 255, 255, 1);
+  --white--cod--gray: rgba(255, 255, 255, 1);
+  --white--ice: rgba(225, 240, 255, 1);
+  --white--ice: rgba(225, 240, 255, 1);
+  --white--pointer: rgba(251, 253, 255, 1);
+
+  --wisp--pink: rgba(225, 240, 255, 1);
+  --zeus: rgba(28, 26, 23, 1);
+  --zeus: rgba(28, 26, 23, 1);
+  --zircon: rgba(251, 253, 255, 1);
+  --zircon-75: rgba(251, 253, 255, 0.75);
+
+  /* Text-size styles */
+  /* base size: tamaguidev---semantic---heading-1 (44px) */
+  --semantic---heading-1: 1rem;
+  --semantic---heading-3: 0.37rem;
+  --semantic---heading-4: 0.32rem;
+  --semantic---heading-5-upper: 0.24rem;
+  --semantic---code: 0.27rem;
+  --semantic---code: 0.29rem;
+  --semantic---code: 0.3rem;
+  --semantic---code: 0.36rem;
+  --semantic---heading-1: 2.59rem;
+  --semantic---heading-1: 3.05rem;
+  --semantic---heading-3: 0.52rem;
+  --semantic---heading-4: 0.45rem;
+  --semantic---heading-4: 0.27rem;
+  --semantic---heading-4: 0.41rem;
+  --semantic---heading-5-upper: 0.34rem;
+  --semantic---item: 0.3rem;
+  --semantic---item: 0.32rem;
+  --semantic---item: 0.36rem;
+  --semantic---item: 0.36rem;
+  --semantic---link: 0.32rem;
+  --inter---medium: 0.38rem;
+  --inter---medium: 0.44rem;
+  --inter---medium: 0.5rem;
+  --inter---medium: 0.6rem;
+  --inter---regular: 0.09rem;
+  --inter---regular: 0.17rem;
+  --inter---regular: 0.19rem;
+  --inter---regular: 0.22rem;
+  --inter---regular: 0.24rem;
+  --inter---light: 0.32rem;
+  --inter---light: 0.36rem;
+  --inter---medium: 0.32rem;
+  --inter---medium: 0.35rem;
+  --inter---medium: 0.38rem;
+  --inter---medium: 0.44rem;
+  --inter---medium: 0.5rem;
+  --inter---medium: 0.6rem;
+  --inter---medium: 0.8rem;
+  --inter---regular: 0.11rem;
+  --inter---regular: 0.25rem;
+  --inter---regular: 0.27rem;
+  --inter---regular: 0.27rem;
+  --inter---regular: 0.3rem;
+  --inter---regular: 0.32rem;
+  --inter---regular: 0.32rem;
+  --inter---regular: 0.36rem;
+  --inter---regular: 0.41rem;
+  --inter---regular: 0.52rem;
+  --inter---regular: 0.52rem;
+  --inter---bold: 1rem;
+  --inter---bold: 0.52rem;
+  --inter---bold: 0.6rem;
+  --inter---bold: 0.78rem;
+  --inter---bold: 0.12rem;
+  --inter---bold: 0.25rem;
+  --inter---bold: 0.27rem;
+  --inter---bold: 0.3rem;
+  --inter---bold: 0.32rem;
+  --inter---bold: 0.38rem;
+  --inter---bold: 0.47rem;
+  --inter---bold: 0.41rem;
+  --inter---bold: 0.41rem;
+  --inter---bold: 0.47rem;
+  --inter---bold: 0.65rem;
+  --inter---bold: 0.73rem;
+  --inter---bold: 0.9rem;
+  --inter---bold: 0.1rem;
+  --inter---bold: 0.25rem;
+  --silkscreen---regular: 0.27rem;
+  --silkscreen---regular: 0.27rem;
+  --silkscreen---regular: 0.3rem;
+  --silkscreen---regular: 0.36rem;
+  --silkscreen---regular: 0.36rem;
+  --silkscreen---regular: 0.36rem;
+  --silkscreen---regular: 0.36rem;
+  --silkscreen---regular: 0.36rem;
+  --silkscreen---regular: 0.47rem;
+  --silkscreen---regular: 0.47rem;
+  --silkscreen---regular: 0.48rem;
+  --silkscreen---regular: 0.63rem;
+  --silkscreen---regular: 0.63rem;
+  --silkscreen---regular: 0.63rem;
+  --silkscreen---regular: 0.64rem;
+  --silkscreen---bold: 0.65rem;
+  --silkscreen---bold: 0.49rem;
+  --silkscreen---bold: 0.38rem;
+  --silkscreen---bold: 0.33rem;
+  --silkscreen---bold: 0.27rem;
+  --silkscreen---bold: 0.22rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* COLORS */
+    --background: 0 0% 10%;
+    --foreground: 0 100% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    --gray: rgba(126, 126, 126, 1);
+    --solitude: rgba(132, 138, 142, 1);
+    --tundora: rgba(66, 66, 66, 1);
+    --cod--gray: rgba(23, 23, 23, 1);
+    --dove--gray-30: rgba(115, 115, 115, 0.30000001192092896);
+    --ocean--green: rgba(60, 177, 121, 1);
+    --celtic: rgba(15, 41, 30, 1);
+    --green--pea: rgba(24, 121, 78, 1);
+    --jewel: rgba(13, 126, 126, 1);
+    --dodger--blue: rgba(54, 158, 255, 1);
+    --azure--radiance: rgba(0, 145, 255, 1);
+    --science--blue: rgba(0, 106, 220, 1);
+    --endeavour: rgba(9, 84, 165, 1);
+    --downriver: rgba(15, 48, 88, 1);
+    --amethyst: rgba(157, 91, 210, 1);
+    --fuchsia--pink: rgba(142, 78, 198, 1);
+    --cerise: rgba(214, 64, 159, 1);
+    --disco: rgba(122, 29, 90, 1);
+    --wine--berry: rgba(69, 26, 55, 1);
+    --loulou: rgba(59, 10, 42, 1);
+    --revolver: rgba(43, 14, 68, 1);
+    --antique--bronze: rgba(89, 74, 5, 1);
+    --bracken: rgba(68, 31, 4, 1);
+    --valencia: rgba(220, 61, 67, 1);
+    --brick--red: rgba(205, 43, 49, 1);
+    --crown-of--thorns: rgba(130, 32, 37, 1);
+    --rose-of--sharon: rgba(189, 75, 0, 1);
+    --brown: rgba(148, 62, 0, 1);
+    --supernova: rgba(247, 206, 0, 1);
+    --tan--hide: rgba(250, 147, 78, 1);
+    --silver--chalice: rgba(165, 165, 165, 1);
+
+    /* Text-size styles */
+    --inter-heading-1: 7.125rem;
+    --inter-heading-2: 2.75rem;
+    --inter-paragraph: 1.438rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-main bg-background text-foreground font-Inter;
+  }
+}
+
+@layer utilities {
+  .h1-bold {
+    @apply text-heading-1 font-bold leading-[130px] tracking-tighter;
+  }
+
+  .h2-bold {
+    @apply text-heading-2 font-bold leading-[53px] tracking-[-0.025em];
+  }
+
+  .regular-paragraph {
+    @apply text-silverchalice text-regular-paragraph font-normal leading-[40px] tracking-[-0.15px];
+  }
+
+  .text-code {
+    @apply font-Silkscreen;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .grid-pattern {
+    background-image: url('/grid-pattern.png');
+    mask-image: radial-gradient(650px 250px at 50% 70%, white, transparent);
+  }
+
+  .dot-pattern {
+    mask-image: linear-gradient(0deg, white, transparent),
+      linear-gradient(180deg, white, transparent);
+    mask-composite: intersect;
+  }
 }
