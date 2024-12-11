@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React, { useCallback, useEffect, useRef } from "react";
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import React, { useCallback, useEffect, useRef } from 'react';
+import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 export interface MagicCardProps extends React.HTMLAttributes<HTMLDivElement> {
   gradientSize?: number;
@@ -15,7 +15,7 @@ export function MagicCard({
   children,
   className,
   gradientSize = 200,
-  gradientColor = "#262626",
+  gradientColor = '#262626',
   gradientOpacity = 0.8,
 }: MagicCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ export function MagicCard({
   const handleMouseOut = useCallback(
     (e: MouseEvent) => {
       if (!e.relatedTarget) {
-        document.removeEventListener("mousemove", handleMouseMove);
+        document.removeEventListener('mousemove', handleMouseMove);
         mouseX.set(-gradientSize);
         mouseY.set(-gradientSize);
       }
@@ -47,20 +47,20 @@ export function MagicCard({
   );
 
   const handleMouseEnter = useCallback(() => {
-    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener('mousemove', handleMouseMove);
     mouseX.set(-gradientSize);
     mouseY.set(-gradientSize);
   }, [handleMouseMove, mouseX, gradientSize, mouseY]);
 
   useEffect(() => {
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseout", handleMouseOut);
-    document.addEventListener("mouseenter", handleMouseEnter);
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseout', handleMouseOut);
+    document.addEventListener('mouseenter', handleMouseEnter);
 
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseout", handleMouseOut);
-      document.removeEventListener("mouseenter", handleMouseEnter);
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseout', handleMouseOut);
+      document.removeEventListener('mouseenter', handleMouseEnter);
     };
   }, [handleMouseEnter, handleMouseMove, handleMouseOut]);
 
@@ -73,7 +73,7 @@ export function MagicCard({
     <div
       ref={cardRef}
       className={cn(
-        "group relative flex size-full overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-900 border text-black dark:text-white",
+        'group relative flex size-full overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-900 border text-black dark:text-white',
         className,
       )}
     >
