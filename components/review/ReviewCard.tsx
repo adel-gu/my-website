@@ -14,7 +14,7 @@ const ReviewCard = ({
   body: string;
 }) => {
   return (
-    <MagicCard className="cursor-pointer bg-transparent border-none p-0 shadow-2xl text-white">
+    <MagicCard className="cursor-pointer bg-[#1a1a1a4d]  border-none p-0 shadow-2xl text-white">
       <figure
         className={cn(
           'relative w-64 cursor-pointer overflow-hidden rounded-xl p-4',

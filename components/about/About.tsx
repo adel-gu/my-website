@@ -23,7 +23,7 @@ const About = () => {
             return (
               <MagicCard
                 key={skill.id}
-                className={`cursor-pointer bg-transparent w-[300px] p-5 border-none shadow-xl`}
+                className={`cursor-pointer bg-[#1a1a1a4d] w-[300px] p-5 border-none shadow-xl`}
                 gradientColor={skill.gradientColor}
                 gradientOpacity={0.25}
               >

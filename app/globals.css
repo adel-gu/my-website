@@ -289,13 +289,18 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
+    --white--ice: rgba(225, 240, 255, 1);
     --gray: rgba(126, 126, 126, 1);
     --solitude: rgba(132, 138, 142, 1);
     --tundora: rgba(66, 66, 66, 1);
+    --mine--shaft: rgba(35, 35, 35, 1);
     --cod--gray: rgba(23, 23, 23, 1);
     --dove--gray-30: rgba(115, 115, 115, 0.30000001192092896);
     --ocean--green: rgba(60, 177, 121, 1);
     --celtic: rgba(15, 41, 30, 1);
+    --bush: rgba(17, 49, 35, 1);
+    --black--bean: rgba(12, 31, 23, 1);
+    --jungle--green: rgba(48, 164, 108, 1);
     --green--pea: rgba(24, 121, 78, 1);
     --jewel: rgba(13, 126, 126, 1);
     --dodger--blue: rgba(54, 158, 255, 1);
@@ -303,6 +308,7 @@
     --science--blue: rgba(0, 106, 220, 1);
     --endeavour: rgba(9, 84, 165, 1);
     --downriver: rgba(15, 48, 88, 1);
+    --blue--zodiac: rgba(16, 42, 76, 1);
     --amethyst: rgba(157, 91, 210, 1);
     --fuchsia--pink: rgba(142, 78, 198, 1);
     --cerise: rgba(214, 64, 159, 1);
@@ -316,6 +322,7 @@
     --brick--red: rgba(205, 43, 49, 1);
     --crown-of--thorns: rgba(130, 32, 37, 1);
     --rose-of--sharon: rgba(189, 75, 0, 1);
+    --rose-of--sharon-2: rgba(189, 75, 0, 0.2);
     --brown: rgba(148, 62, 0, 1);
     --supernova: rgba(247, 206, 0, 1);
     --tan--hide: rgba(250, 147, 78, 1);
@@ -323,7 +330,8 @@
 
     /* Text-size styles */
     --inter-heading-1: 7.125rem;
-    --inter-heading-2: 2.75rem;
+    --inter-heading-2: 3.75rem;
+    --inter-heading-3: 1.75rem;
     --inter-paragraph: 1.438rem;
   }
 }
@@ -344,6 +352,10 @@
 
   .h2-bold {
     @apply text-heading-2 font-bold leading-[53px] tracking-[-0.025em];
+  }
+
+  .h3-bold {
+    @apply text-heading-3 font-bold leading-[45px] tracking-[-0.005em];
   }
 
   .regular-paragraph {
@@ -367,5 +379,21 @@
     mask-image: linear-gradient(0deg, white, transparent),
       linear-gradient(180deg, white, transparent);
     mask-composite: intersect;
+  }
+
+  .projects-grid-pattern {
+    background-image: url('/grid-pattern.png');
+    mask-image: linear-gradient(180deg, white, transparent);
+  }
+
+  .projects-grid-pattern-bottom {
+    background-image: url('/grid-pattern.png');
+    background-position: bottom left;
+    mask-image: linear-gradient(0deg, white, transparent);
+  }
+
+  .blog-grid-pattern {
+    background-image: url('/grid-pattern.png');
+    mask-image: linear-gradient(180deg, white, transparent);
   }
 }
