@@ -16,7 +16,7 @@ export const skills = [
       'A style library for React and/or React Native with a large typed superset of the React Native style API, with no outside dependencies in about 24Kb.',
   },
   {
-    id: 'static',
+    id: 'static-1',
     gradientColor: 'var(--azure--radiance)',
     asset: {
       background: 'var(--blue--zodiac)',
@@ -30,7 +30,7 @@ export const skills = [
       'A smart optimizer that makes your app fast with partial analysis, extracts CSS, flattens your tree, and removes code. Next, Webpack, Vite, Babel and Metro.',
   },
   {
-    id: 'static',
+    id: 'static-2',
     gradientColor: 'var(--azure--radiance)',
     asset: {
       background: 'var(--blue--zodiac)',
