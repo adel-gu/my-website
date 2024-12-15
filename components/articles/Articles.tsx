@@ -2,13 +2,14 @@ import ArticleCard from './ArticleCard';
 
 const Articles = () => {
   return (
-    <section className="py-40 relative">
+    <section className="py-40 relative border">
       <div className="container pl-44">
         <h2 className="h2-bold">Highlighted articles</h2>
         <p className="max-w-[835px] regular-paragraph mt-8">
-          With a strong foundation in the React ecosystem and a passion for
-          crafting seamless user experiences, I've been building web
-          applications that balance functionality and performance.
+          I share insights and knowledge through articles focused on modern
+          technologies, with a special emphasis on front-end development. From
+          best practices to deep dives into frameworks and tools, these writings
+          aim to educate and inspire developers at all levels.
         </p>
       </div>
 
