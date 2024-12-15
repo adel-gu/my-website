@@ -1,19 +1,23 @@
-import { cn } from '@/lib/utils';
 import DotPattern from '../ui/dot-pattern';
-import IconCloud from '../ui/icon-cloud';
-import { MagicCard } from '../ui/magic-card';
-import { skills, slugs } from '@/constants/skills';
+import { skills } from '@/constants/skills';
+import SkillCard from './SkillCard';
 
 const About = () => {
   return (
-    <section className="relative overflow-hidden flex flex-col justify-center items-center">
+    <section className="relative overflow-hidden flex flex-col justify-center items-center border">
       <div className="z-10">
         <div className="text-center space-y-8">
           <h2 className="h2-bold">About me</h2>
           <p className="max-w-[835px] regular-paragraph mx-auto">
-            With a strong foundation in the React ecosystem and a passion for
-            crafting seamless user experiences, I've been building web
-            applications that balance functionality and performance.
+            Hi 👋, I'm{' '}
+            <span className="text-code text-yellow-600">Adel Guitoun</span>, a
+            passionate software engineer with a knack for creating scalable,
+            high-performance applications and reusable systems. With a strong
+            foundation in <span className="text-green-700">frontend</span> and
+            <span className="text-blue-600"> backend technologies</span>, I
+            specialize in crafting solutions that are as impactful for{' '}
+            <span className="text-orange-500">users</span> as they are efficient
+            for <span className="text-purple-600">developers.</span>
           </p>
         </div>
 
@@ -21,31 +25,16 @@ const About = () => {
           {skills.map((skill) => {
             const Icon = skill.asset.icon;
             return (
-              <MagicCard
+              <SkillCard
                 key={skill.id}
-                className={`cursor-pointer bg-[#1a1a1a4d] w-[300px] p-5 border-none shadow-xl`}
                 gradientColor={skill.gradientColor}
-                gradientOpacity={0.25}
+                assetBackground={skill.asset.background}
+                titleBackground={skill.title.background}
+                titleLabel={skill.title.label}
+                content={skill.content}
               >
-                <div
-                  className={`p-2 rounded-full grid items-center w-fit`}
-                  style={{
-                    color: `${skill.gradientColor}`,
-                    backgroundColor: `${skill.asset.background}`,
-                  }}
-                >
-                  <Icon className="w-4 h-4" />
-                </div>
-
-                <div
-                  className={`p-2 rounded-lg text-code text-whiteice w-fit mt-3 mb-4`}
-                  style={{ backgroundColor: `${skill.title.background}` }}
-                >
-                  <h3>{skill.title.label}</h3>
-                </div>
-
-                <p className="text-whiteice">{skill.content}</p>
-              </MagicCard>
+                <Icon className="w-4 h-4" />
+              </SkillCard>
             );
           })}
         </div>
@@ -57,18 +46,8 @@ const About = () => {
         cx={1}
         cy={1}
         cr={1}
-        className="dot-pattern opacity-50 h-[900px]"
+        className="dot-pattern opacity-50"
       />
-
-      <div className="relative h-[600px] mt-24">
-        <p className="z-10 max-w-[835px] regular-paragraph text-center mx-auto">
-          I am flexible when it comes to technologies I love exploring and based
-          on the project needs I pick the necessary stack
-        </p>
-        <div className="flex z-[-10] items-center justify-center rounded-lg bg-none mt-12">
-          <IconCloud iconSlugs={slugs} />
-        </div>
-      </div>
     </section>
   );
 };
