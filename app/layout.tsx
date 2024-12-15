@@ -29,10 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${silkscreen.variable}`}>
+      <body className={`${inter.variable} ${silkscreen.variable} relative`}>
         <NavBar />
         <main>{children}</main>
         <Footer />
+        <div className="inset-0 absolute main-mask pointer-events-none -z-50" />
       </body>
     </html>
   );
