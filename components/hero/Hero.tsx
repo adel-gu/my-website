@@ -1,39 +1,45 @@
 import { cn } from '@/lib/utils';
 import AnimatedGradientText from '../ui/animated-gradient-text';
 import AnimatedGridPattern from '../ui/animated-grid-pattern';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative px-6 pb-32" style={{ contain: 'layout' }}>
       <div className="pt-44">
-        <h1 className="h1-bold flex flex-col items-center">
+        <h1 className="h1-bold flex flex-col items-start md:items-center">
           <span>Crafting</span>
           <span>memorable user &</span>
           <span>developer experiences</span>
         </h1>
       </div>
 
-      <div className="flex items-center gap-48 w-fit mx-auto mt-12 ">
+      <div className="flex flex-col-reverse gap-8 mt-12 md:flex-row md:justify-center md:gap-20 lg:gap-32">
         <div className="flex flex-col items-start gap-4 w-fit">
-          <p className="font-Silkscreen text-gray text-[27px] font-normal uppercase">
+          <p className="font-Silkscreen text-gray-400 text-xl md:text-2xl font-normal uppercase md:mt-8">
             adel.g · software engineer
           </p>
           <div>
-            <AnimatedGradientText className="hover:cursor-pointer px-5 py-2">
-              🤝 <hr className="mx-2 h-4 w-px shrink-0 bg-gray" />{' '}
-              <span
-                className={cn(
-                  `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-                )}
-              >
-                Start collaboration
-              </span>
-            </AnimatedGradientText>
+            <Link
+              href="https://www.linkedin.com/in/adelguitoun/"
+              target="_blank"
+            >
+              <AnimatedGradientText className="hover:cursor-pointer px-5 py-2 text-lg rounded-full">
+                🤝 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-400" />{' '}
+                <span
+                  className={cn(
+                    `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+                  )}
+                >
+                  Start a collaboration
+                </span>
+              </AnimatedGradientText>
+            </Link>
           </div>
         </div>
 
-        <div className="space-y-1">
-          <p className="font-Silkscreen text-gray text-[18px] font-normal uppercase">
+        <div className="flex flex-wrap gap-2 md:flex-col">
+          <p className="font-Silkscreen text-gray-400 text-xl font-normal uppercase">
             Building...
           </p>
           <p className="font-Silkscreen bg-celtic text-[18px] font-normal uppercase rounded-md px-2 w-fit">
@@ -51,7 +57,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute z-[-10] top-0 h-full w-full overflow-hidden [mask-image:radial-gradient(900px_circle_at_top,white,transparent)] opacity-50">
+      <div className="absolute -z-20 top-0 h-full w-full overflow-hidden [mask-image:radial-gradient(900px_circle_at_top,#000,transparent)] opacity-50 pointer-events-none">
         <AnimatedGridPattern
           numSquares={120}
           maxOpacity={0.2}
@@ -70,7 +76,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="absolute z-[-10] inset-0 grid-pattern opacity-50" />
+      <div className="absolute inset-0 -z-10 [mask-image:linear-gradient(#000_50%,transparent)] pointer-events-none">
+        <div className="absolute inset-0 grid-pattern pointer-events-none" />
+      </div>
     </section>
   );
 };
