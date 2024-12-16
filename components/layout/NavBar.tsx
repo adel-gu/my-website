@@ -33,7 +33,7 @@ const NavBar = () => {
       <div className="pointer-events-auto w-full max-w-[1200px] relative md:rounded-full">
         <div
           className={`transition-all ease-out duration-300 py-5 md:py-[9px] overflow-hidden w-full bg-transparent mt-0 ${
-            isScrolled && 'md:mt-1'
+            isScrolled && 'md:mt-[6px]'
           }`}
           style={{
             contain: 'paint',
