@@ -16,14 +16,14 @@ const Projects = () => {
   return (
     <div className="">
       <div className="relative">
-        <div className="flex items-start justify-center gap-8 mx-auto">
+        <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-evenly lg:justify-center lg:gap-8">
           <ProjectCard
             src={activeProject.screenshot}
             title={activeProject.title}
           />
 
           {/* Buttons */}
-          <div className="w-fit flex gap-20 pt-8">
+          <div className="w-fit flex gap-5 mx-auto md:mx-0 md:mt-7 xl:gap-12">
             {projects.map((project) => (
               <ProjectBtn
                 key={project.id}
