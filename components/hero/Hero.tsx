@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="relative px-6 pb-32" style={{ contain: 'layout' }}>
-      <div className="pt-44">
+    <section className="relative px-6 pb-44" style={{ contain: 'layout' }}>
+      <div className="pt-48">
         <h1 className="h1-bold flex flex-col items-start md:items-center">
           <span>Crafting</span>
           <span>memorable user &</span>
@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className="flex flex-col-reverse gap-8 mt-12 md:flex-row md:justify-center md:gap-20 lg:gap-32">
         <div className="flex flex-col items-start gap-4 w-fit">
-          <p className="font-Silkscreen text-gray-400 text-xl md:text-2xl font-normal uppercase md:mt-8">
+          <p className="font-Silkscreen text-gray-400 md:text-2xl font-normal uppercase md:mt-8">
             adel.g · software engineer
           </p>
           <div>
@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap gap-2 md:flex-col">
-          <p className="font-Silkscreen text-gray-400 text-xl font-normal uppercase">
+          <p className="font-Silkscreen text-gray-400 font-normal uppercase">
             Building...
           </p>
           <p className="font-Silkscreen bg-celtic text-[18px] font-normal uppercase rounded-md px-2 w-fit">
