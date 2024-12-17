@@ -8,7 +8,7 @@ const ProjectsSection = () => {
         <p className="max-w-[835px] regular-paragraph">
           I've worked on a wide range of projects, from scalable web
           applications and reusable UI component libraries to backend APIs and
-          microfrontend architectures.
+          microfrontend architectures. Here are some examples of my latest work:
         </p>
       </div>
 
