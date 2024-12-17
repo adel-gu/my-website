@@ -1,8 +1,13 @@
 import Link from 'next/link';
 
-const Logo = () => {
+const Logo = ({ isLogoFooter = false }: { isLogoFooter?: boolean }) => {
   return (
-    <Link href="/" className="text-code uppercase font-bold text-2xl">
+    <Link
+      href="/"
+      className={`text-code uppercase font-bold ${
+        isLogoFooter ? 'text-3xl' : 'text-2xl'
+      }`}
+    >
       <span className="text-valencia">a</span>
       <span className="text-supernova">d</span>
       <span className="text-cerise">e</span>
