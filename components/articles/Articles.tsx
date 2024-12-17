@@ -2,8 +2,8 @@ import ArticleCard from './ArticleCard';
 
 const Articles = () => {
   return (
-    <section className="py-40 relative border">
-      <div className="container pl-44">
+    <section className="py-24 px-6 xl:px-56 relative">
+      <div>
         <h2 className="h2-bold">Highlighted articles</h2>
         <p className="max-w-[835px] regular-paragraph mt-8">
           I share insights and knowledge through articles focused on modern
@@ -13,7 +13,7 @@ const Articles = () => {
         </p>
       </div>
 
-      <div className="container px-44 mt-16">
+      <div className="mt-16">
         <ArticleCard />
       </div>
 

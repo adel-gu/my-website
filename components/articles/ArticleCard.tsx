@@ -14,12 +14,12 @@ const ArticleCard = () => {
       href="https://medium.com/@adeelguitoun/a-quick-guide-to-ruby-on-rails-migrations-with-examples-8b3da8077ed7"
       target="_blank"
     >
-      <Card className="bg-background transition-all border-none shadow-2xl hover:-translate-y-0.5 hover:bg-[#1a1a1a4d]">
-        <CardHeader>
+      <Card className="bg-background transition-all border-none shadow-2xl hover:-translate-y-1.5 hover:bg-[#1a1a1a4d] max-w-[1200px]">
+        <CardHeader className="space-y-3">
           <CardTitle className="text-white">
             A Quick Guide to Ruby on Rails Migrations with examples!!
           </CardTitle>
-          <CardDescription>
+          <CardDescription className="text-silverchalice">
             How to set up a Rails app with PostgreSQL, create and configure
             migrations to define and modify database tables, and manage
             relationships between them. The tutorial emphasizes Rails'
