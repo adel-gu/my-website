@@ -4,9 +4,9 @@ import SkillCard from './SkillCard';
 
 const About = () => {
   return (
-    <section className="relative overflow-hidden flex flex-col justify-center items-center border">
+    <section className="relative flex justify-center items-center px-6 py-24">
       <div className="z-10">
-        <div className="text-center space-y-8">
+        <div className="space-y-8 md:text-center">
           <h2 className="h2-bold">About me</h2>
           <p className="max-w-[835px] regular-paragraph mx-auto">
             Hi 👋, I'm{' '}
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-12 mt-24">
+        <div className="flex flex-wrap gap-8 mt-16 md:mt-24">
           {skills.map((skill) => {
             const Icon = skill.asset.icon;
             return (

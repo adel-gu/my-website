@@ -20,7 +20,7 @@ const SkillCard = ({
 }: SkillCardProps) => {
   return (
     <MagicCard
-      className={`cursor-pointer bg-[#1a1a1a4d] w-[300px] p-5 border-none shadow-xl`}
+      className={`cursor-pointer bg-[#1a1a1a6c] w-[350px] p-5 border-none shadow-xl`}
       gradientColor={gradientColor}
       gradientOpacity={0.25}
     >
@@ -41,7 +41,7 @@ const SkillCard = ({
         <h3>{titleLabel}</h3>
       </div>
 
-      <p className="text-whiteice">{content}</p>
+      <p className="text-silverchalice">{content}</p>
     </MagicCard>
   );
 };
