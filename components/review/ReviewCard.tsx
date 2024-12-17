@@ -7,17 +7,23 @@ const ReviewCard = ({
   name,
   username,
   body,
+  bgGradientColor,
 }: {
   img: string;
   name: string;
   username: string;
   body: string;
+  bgGradientColor: string;
 }) => {
   return (
-    <MagicCard className="cursor-pointer bg-[#1a1a1a4d]  border-none p-0 shadow-2xl text-white">
+    <MagicCard
+      className="cursor-pointer bg-background border-none text-white"
+      gradientColor={bgGradientColor}
+      gradientOpacity={0.2}
+    >
       <figure
         className={cn(
-          'relative w-64 cursor-pointer overflow-hidden rounded-xl p-4',
+          'relative w-[650px] cursor-pointer overflow-hidden rounded-xl p-6',
         )}
       >
         <div className="flex flex-row items-center gap-2">
@@ -35,7 +41,9 @@ const ReviewCard = ({
             <p className="text-xs font-medium text-gray">{username}</p>
           </div>
         </div>
-        <blockquote className="mt-2 text-sm line-clamp-3">{body}</blockquote>
+        <blockquote className="mt-2 text-base text-silverchalice line-clamp-3">
+          {body}
+        </blockquote>
       </figure>
     </MagicCard>
   );

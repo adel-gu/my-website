@@ -1,4 +1,4 @@
-import { skills, slugs, techs } from '@/constants/skills';
+import { slugs, techs } from '@/constants/skills';
 import DotPattern from '../ui/dot-pattern';
 import IconCloud from '../ui/icon-cloud';
 import TechTag from './TechTag';
