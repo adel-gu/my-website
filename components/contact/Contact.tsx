@@ -3,15 +3,13 @@ import ContactCard from './ContactCard';
 
 const Contact = () => {
   return (
-    <section className="py-40 relative border">
-      <div className="container pl-44">
-        <h4 className="h3-bold">
-          Let's build something amazing together! Feel free to reach out for
-          collaboration, freelance work, or just to say hi!
-        </h4>
-      </div>
+    <section className="py-24 px-6 relative space-y-12">
+      <h4 className="h3-bold md:text-center md:max-w-[850px] md:mx-auto">
+        Let's create something exceptional together! Feel free to reach out for
+        collaboration, freelance work, or just to say hi!
+      </h4>
 
-      <div className="container px-44 mt-16 grid grid-cols-3 gap-4">
+      <div className="flex flex-col lg:flex-row xl:justify-center gap-4 ">
         {contacts.map((contact) => (
           <ContactCard
             key={contact.id}
