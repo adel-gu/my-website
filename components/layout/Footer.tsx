@@ -6,22 +6,22 @@ import { div, ul } from 'framer-motion/client';
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center gap-8">
-      <div className="text-center">
-        <p className="mb-2 text-code">Built with ❤️</p>
-        <Logo />
-      </div>
-      <ul className="flex items-center gap-16">
+    <footer className="flex flex-col xl:flex-row xl:justify-evenly gap-12 py-24 px-6">
+      <Logo isLogoFooter />
+
+      <ul className="flex flex-wrap gap-12">
         {socialLinks.map((socialLink) => (
           <li key={socialLink.id}>
             <Link href={socialLink.path}>
               <Image
                 src={socialLink.icon}
                 alt={socialLink.id}
-                width={30}
-                height={30}
+                width={25}
+                height={25}
               />
-              <span className="text-code">{socialLink.id}</span>
+              <span className="text-code text-silverchalice text-base">
+                {socialLink.id}
+              </span>
             </Link>
           </li>
         ))}
