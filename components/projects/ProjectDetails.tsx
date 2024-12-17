@@ -86,7 +86,9 @@ const ProjectDetails = ({
             onMouseLeave={() => setHoveredId('')}
             className="transition-all"
           >
-            <Link href={github}>Github »</Link>
+            <Link href={github} target="_blank">
+              Github »
+            </Link>
           </Button>
           <Button
             asChild
@@ -97,7 +99,9 @@ const ProjectDetails = ({
             onMouseLeave={() => setHoveredId('')}
             className="transition-all"
           >
-            <Link href={live}>Live »</Link>
+            <Link href={live} target="_blank">
+              Live »
+            </Link>
           </Button>
         </CardFooter>
       </Card>
