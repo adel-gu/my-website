@@ -26,31 +26,37 @@ export const socialLinks = [
   {
     id: 'resume',
     icon: '/resume.svg',
+    alt: "Link to Adel's resume",
     path: 'https://x.com/GuitounAdel',
   },
   {
     id: 'github',
     icon: '/github.svg',
+    alt: "Link to Adel's gitHub profile",
     path: 'https://x.com/GuitounAdel',
   },
   {
     id: 'tweeter',
     icon: '/tweeter.svg',
+    alt: "Link to Adel's tweeter profile",
     path: 'https://x.com/GuitounAdel',
   },
   {
     id: 'linkedin',
     icon: '/linkedin.svg',
+    alt: "Link to Adel's linkedin profile",
     path: 'https://www.linkedin.com/in/adelguitoun/',
   },
   {
     id: 'wellfound',
     icon: '/wellfound.svg',
+    alt: "Link to Adel's wellfound profile",
     path: 'https://wellfound.com/profile/edit/overview',
   },
   {
     id: 'medium',
     icon: '/medium.svg',
+    alt: "Link to Adel's medium profile",
     path: 'https://wellfound.com/profile/edit/overview',
   },
 ];
