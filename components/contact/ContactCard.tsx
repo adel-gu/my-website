@@ -9,7 +9,6 @@ import {
 } from '../ui/card';
 
 import Image from 'next/image';
-import { Button } from '../ui/button';
 
 type Props = {
   title: string;

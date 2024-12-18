@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import { Inter, Silkscreen } from 'next/font/google';
 
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     'Software engineer',
   ],
   icons: {
-    icon: '/favicon.ico',
+    icon: './favicon.ico',
     apple: '/apple-touch-icon.png',
     other: [
       {
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     description: `Hi 👋, I'm Adel Guitoun. I'm a passionate software engineer with a knack for creating scalable, high-performance applications and reusable systems. With a strong foundation in front-end and back-end technologies, I specialize in crafting solutions that are as impactful for users as they are efficient for developers.`,
     images: [
       {
-        url: '/opengraph-image.png',
+        url: '/opengraph-image.jpg',
         width: 1200,
         height: 628,
         alt: 'Adel Guitoun',
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
     description: `Hi 👋, I'm Adel Guitoun. I'm a passionate software engineer with a knack for creating scalable, high-performance applications and reusable systems. With a strong foundation in front-end and back-end technologies, I specialize in crafting solutions that are as impactful for users as they are efficient for developers.`,
     card: 'summary_large_image',
     site: '@AdelGuitoun',
-    images: '/opengraph-image.png',
+    images: '/opengraph-image.jpg',
   },
   verification: {
     google: 'k83JtkKiU8MvRqLS05NLwZPSOGLJXbZpzln4wdJ-iPI',
@@ -83,7 +84,7 @@ export default function RootLayout({
         <NavBar />
         <main>{children}</main>
         <Footer />
-        <div className="inset-0 absolute main-mask pointer-events-none -z-50" />
+        <div className="main-mask pointer-events-none absolute inset-0 -z-50" />
       </body>
     </html>
   );

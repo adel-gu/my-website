@@ -7,7 +7,6 @@ import NavLinks from './NavLinks';
 import {
   Sheet,
   SheetContent,
-  SheetHeader,
   SheetTrigger,
   SheetClose,
 } from '@/components/ui/sheet';
