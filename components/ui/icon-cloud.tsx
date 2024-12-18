@@ -49,9 +49,8 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
     minContrastRatio,
     size: 42,
     aProps: {
-      href: undefined,
-      target: undefined,
-      rel: undefined,
+      role: 'presentation',
+      'aria-hidden': true,
       onClick: (e: any) => e.preventDefault(),
     },
   });
@@ -75,9 +74,11 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, ''),
+      renderCustomIcon(icon, 'dark'),
     );
   }, [data, theme]);
+
+  console.log('ICON: ', renderedIcons);
 
   return (
     // @ts-ignore
