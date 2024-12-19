@@ -21,7 +21,7 @@ const ArticleCard = () => {
           <CardDescription className="text-silverchalice">
             How to set up a Rails app with PostgreSQL, create and configure
             migrations to define and modify database tables, and manage
-            relationships between them. The tutorial emphasizes Rails'
+            relationships between them. The tutorial emphasizes Rails
             conventions, automatic features, and how to handle schema changes
             effectively.
           </CardDescription>
