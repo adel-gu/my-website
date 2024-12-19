@@ -27,13 +27,13 @@ export const socialLinks = [
     id: 'resume',
     icon: '/resume.svg',
     alt: "Link to Adel's resume",
-    path: 'https://x.com/GuitounAdel',
+    path: 'https://drive.google.com/file/d/1YiBWrY2cMZRaHtbeiHZSjYpizlhXqgEr/view?usp=sharing',
   },
   {
     id: 'github',
     icon: '/github.svg',
     alt: "Link to Adel's gitHub profile",
-    path: 'https://x.com/GuitounAdel',
+    path: 'https://github.com/adel-gu',
   },
   {
     id: 'tweeter',
@@ -51,12 +51,12 @@ export const socialLinks = [
     id: 'wellfound',
     icon: '/wellfound.svg',
     alt: "Link to Adel's wellfound profile",
-    path: 'https://wellfound.com/profile/edit/overview',
+    path: 'https://wellfound.com/u/adel-guitoun',
   },
   {
     id: 'medium',
     icon: '/medium.svg',
     alt: "Link to Adel's medium profile",
-    path: 'https://wellfound.com/profile/edit/overview',
+    path: 'https://medium.com/@adeelguitoun',
   },
 ];

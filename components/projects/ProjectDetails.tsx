@@ -46,7 +46,7 @@ const ProjectDetails = ({
   }, [stack]);
 
   return (
-    <div className="relative -top-10 md:w-[95%] mx-auto 2xl:w-[75%]">
+    <div className="relative -top-10 mx-auto md:w-[95%] 2xl:w-[75%]">
       <Card
         style={{ background: cardBg, border: `1px solid ${color}` }}
         className="py-20 shadow-2xl transition-all"
@@ -60,36 +60,39 @@ const ProjectDetails = ({
             {listStacks.map((s) => (
               <p
                 key={s}
-                className="font-Silkscreen text-[12px] font-normal uppercase text-whiteice text-right"
+                className="text-right font-Silkscreen text-[12px] font-normal uppercase text-whiteice"
               >
                 {s}
               </p>
             ))}
           </div>
 
-          <div className="text-center md:col-span-4 xl:justify-self-start xl:self-start	">
+          <div className="text-center md:col-span-4 xl:self-start xl:justify-self-start	">
             <p className="text-whiteice">{description}</p>
           </div>
 
-          <p className="text-tundora text-[14px] xl:justify-self-start	xl:self-end">
+          <p className="text-[14px] text-tundora xl:self-end	xl:justify-self-start">
             {date}
           </p>
         </CardContent>
 
-        <CardFooter className="w-fit mx-auto mt-12 gap-8 font-Silkscreen">
-          <Button
-            asChild
-            style={{
-              backgroundColor: `${hoveredId === '1' ? btnBgHover : btnBg}`,
-            }}
-            onMouseEnter={() => setHoveredId('1')}
-            onMouseLeave={() => setHoveredId('')}
-            className="transition-all"
-          >
-            <Link href={github} target="_blank">
-              Github »
-            </Link>
-          </Button>
+        <CardFooter className="mx-auto mt-12 w-fit gap-8 font-Silkscreen">
+          {github && (
+            <Button
+              asChild
+              style={{
+                backgroundColor: `${hoveredId === '1' ? btnBgHover : btnBg}`,
+              }}
+              onMouseEnter={() => setHoveredId('1')}
+              onMouseLeave={() => setHoveredId('')}
+              className="transition-all"
+            >
+              <Link href={github} target="_blank">
+                Github »
+              </Link>
+            </Button>
+          )}
+
           <Button
             asChild
             style={{

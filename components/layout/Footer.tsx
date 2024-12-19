@@ -11,7 +11,7 @@ const Footer = () => {
       <ul className="flex flex-wrap gap-12">
         {socialLinks.map((socialLink) => (
           <li key={socialLink.id}>
-            <Link href={socialLink.path}>
+            <Link href={socialLink.path} target="_blank">
               <Image
                 src={socialLink.icon}
                 alt={socialLink.alt}
