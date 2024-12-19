@@ -4,12 +4,12 @@ import SkillCard from './SkillCard';
 
 const About = () => {
   return (
-    <section className="relative flex justify-center items-center px-6 py-24">
+    <section className="relative flex items-center justify-center px-6 py-24">
       <div className="z-10">
         <div className="space-y-8 md:text-center">
           <h2 className="h2-bold">About me</h2>
-          <p className="max-w-[835px] regular-paragraph mx-auto">
-            Hi 👋, I'm{' '}
+          <p className="regular-paragraph mx-auto max-w-[835px]">
+            Hi 👋, I&apos;m{' '}
             <span className="text-code text-yellow-600">Adel Guitoun</span>, a
             passionate software engineer with a knack for creating scalable,
             high-performance applications and reusable systems. With a strong
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-8 mt-16 md:mt-24">
+        <div className="mt-16 flex flex-wrap gap-8 md:mt-24">
           {skills.map((skill) => {
             const Icon = skill.asset.icon;
             return (
@@ -33,7 +33,7 @@ const About = () => {
                 titleLabel={skill.title.label}
                 content={skill.content}
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="size-4" />
               </SkillCard>
             );
           })}

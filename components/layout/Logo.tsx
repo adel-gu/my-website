@@ -4,7 +4,7 @@ const Logo = ({ isLogoFooter = false }: { isLogoFooter?: boolean }) => {
   return (
     <Link
       href="/"
-      className={`text-code uppercase font-bold ${
+      className={`text-code font-bold uppercase ${
         isLogoFooter ? 'text-3xl' : 'text-2xl'
       }`}
     >

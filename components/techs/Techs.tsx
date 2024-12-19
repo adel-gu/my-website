@@ -5,16 +5,16 @@ import TechTag from './TechTag';
 
 const Techs = () => {
   return (
-    <section className="relative overflow-hidden flex flex-col justify-center items-center px-6 py-24">
+    <section className="relative flex flex-col items-center justify-center overflow-hidden px-6 py-24">
       <div className="relative">
-        <div className="flex flex-col items-center justify-center rounded-lg bg-none gap-8 ">
-          <p className="z-10 max-w-[850px] regular-paragraph md:text-center">
+        <div className="flex flex-col items-center justify-center gap-8 rounded-lg bg-none ">
+          <p className="regular-paragraph z-10 max-w-[850px] md:text-center">
             Building effective and innovative solutions requires the right
             technologies. I leverage a carefully selected set of modern tools
             and frameworks to bring these solutions to life, including:
           </p>
 
-          <div className="flex flex-wrap gap-x-3 gap-y-2 md:justify-center md:items-center md:max-w-[600px] ">
+          <div className="flex flex-wrap gap-x-3 gap-y-2 md:max-w-[600px] md:items-center md:justify-center ">
             {techs.map((tech) => (
               <TechTag
                 key={tech.label}
@@ -36,7 +36,7 @@ const Techs = () => {
         cx={1}
         cy={1}
         cr={1}
-        className="dot-pattern bottom-0 opacity-50  border"
+        className="dot-pattern bottom-0 border  opacity-50"
       />
     </section>
   );

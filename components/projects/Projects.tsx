@@ -23,7 +23,7 @@ const Projects = () => {
           />
 
           {/* Buttons */}
-          <div className="w-fit flex gap-5 mx-auto md:mx-0 md:mt-7 xl:gap-12">
+          <div className="mx-auto flex w-fit gap-5 md:mx-0 md:mt-7 xl:gap-12">
             {projects.map((project) => (
               <ProjectBtn
                 key={project.id}
@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
 
         {/* Grid pattern */}
-        <div className="absolute z-[-10] inset-0 projects-grid-pattern mt-36 opacity-50 border-t border-t-tundora" />
+        <div className="projects-grid-pattern absolute inset-0 -z-10 mt-36 border-t border-t-tundora opacity-50" />
       </div>
       {/* Project details card */}
 

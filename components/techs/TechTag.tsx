@@ -9,11 +9,11 @@ const TechTag = ({
 }) => {
   return (
     <MagicCard
-      className="cursor-pointer bg-background w-fit border-none flex items-center justify-center py-2 px-2.5"
+      className="flex w-fit cursor-pointer items-center justify-center border-none bg-background px-2.5 py-2"
       gradientColor={gradientColor}
       gradientOpacity={0.25}
     >
-      <p className="text-whiteice text-sm font-Silkscreen">{title}</p>
+      <p className="font-Silkscreen text-sm text-whiteice">{title}</p>
     </MagicCard>
   );
 };

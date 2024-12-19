@@ -46,7 +46,7 @@ const ProjectDetails = ({
   }, [stack]);
 
   return (
-    <div className="relative -top-10 mx-auto md:w-[95%] 2xl:w-[75%]">
+    <div className="relative -top-10 mx-auto md:w-[95%] 2xl:w-3/4">
       <Card
         style={{ background: cardBg, border: `1px solid ${color}` }}
         className="py-20 shadow-2xl transition-all"

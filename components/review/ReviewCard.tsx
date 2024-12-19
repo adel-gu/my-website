@@ -17,7 +17,7 @@ const ReviewCard = ({
 }) => {
   return (
     <MagicCard
-      className="cursor-pointer bg-background border-none text-white"
+      className="cursor-pointer border-none bg-background text-white"
       gradientColor={bgGradientColor}
       gradientOpacity={0.2}
     >
@@ -38,10 +38,10 @@ const ReviewCard = ({
             <figcaption className="text-sm font-medium dark:text-white">
               {name}
             </figcaption>
-            <p className="text-xs font-medium text-gray">{username}</p>
+            <p className="text-xs font-medium">{username}</p>
           </div>
         </div>
-        <blockquote className="mt-2 text-base text-silverchalice line-clamp-3">
+        <blockquote className="mt-2 line-clamp-3 text-base text-silverchalice">
           {body}
         </blockquote>
       </figure>

@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 const ProjectCard = ({ src, title }: { src: string; title: string }) => {
   return (
-    <div className="shadow-2xl z-10 w-[350px] h-[400px] rounded-xl overflow-hidden md:mt-32">
+    <div className="z-10 h-[400px] w-[350px] overflow-hidden rounded-xl shadow-2xl md:mt-32">
       <Image
         src={src}
         alt={title}
         width={350}
         height={400}
-        className="bg-center bg-cover size-full"
+        className="size-full bg-cover bg-center"
       />
     </div>
   );

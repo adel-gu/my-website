@@ -20,12 +20,12 @@ const SkillCard = ({
 }: SkillCardProps) => {
   return (
     <MagicCard
-      className={`cursor-pointer bg-[#1a1a1a6c] w-[350px] p-5 border-none shadow-xl`}
+      className={`w-[350px] cursor-pointer border-none bg-[#1a1a1a6c] p-5 shadow-xl`}
       gradientColor={gradientColor}
       gradientOpacity={0.25}
     >
       <div
-        className={`p-2 rounded-full grid items-center w-fit`}
+        className={`grid w-fit items-center rounded-full p-2`}
         style={{
           color: `${gradientColor}`,
           backgroundColor: `${assetBackground}`,
@@ -35,7 +35,7 @@ const SkillCard = ({
       </div>
 
       <div
-        className={`p-2 rounded-lg text-code text-whiteice w-fit mt-3 mb-4`}
+        className={`text-code mb-4 mt-3 w-fit rounded-lg p-2 text-whiteice`}
         style={{ backgroundColor: `${titleBackground}` }}
       >
         <h3>{titleLabel}</h3>
