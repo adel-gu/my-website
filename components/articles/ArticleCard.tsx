@@ -13,7 +13,7 @@ const ArticleCard = () => {
       href="https://medium.com/@adeelguitoun/a-quick-guide-to-ruby-on-rails-migrations-with-examples-8b3da8077ed7"
       target="_blank"
     >
-      <Card className="bg-background transition-all border-none shadow-2xl hover:-translate-y-1.5 hover:bg-[#1a1a1a4d] max-w-[1200px]">
+      <Card className="max-w-[1200px] border-none bg-background shadow-2xl transition-all hover:-translate-y-1.5 hover:bg-[#1a1a1a4d]">
         <CardHeader className="space-y-3">
           <CardTitle className="text-white">
             A Quick Guide to Ruby on Rails Migrations with examples!!
@@ -26,7 +26,7 @@ const ArticleCard = () => {
             effectively.
           </CardDescription>
         </CardHeader>
-        <CardFooter className="text-dovegray30">
+        <CardFooter className="text-gray-400">
           6 min read · Jan 24, 2023
         </CardFooter>
       </Card>

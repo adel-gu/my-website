@@ -12,17 +12,21 @@ const ProjectBtn = ({
   switchActiveProject: (id: string) => void;
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div
+      className={`flex flex-col items-center justify-center ${
+        active ? 'font-bold text-background' : 'text-foreground'
+      }`}
+    >
       <button
         style={{ backgroundColor: `${active ? color : ''}` }}
-        className="bg-mineshaft px-3 py-2 rounded-full transition-all"
+        className="flex size-11 items-center justify-center rounded-full bg-mineshaft transition-all"
         onClick={() => switchActiveProject(id)}
       >
         {id}
       </button>
       <div
         style={{ backgroundColor: `${active ? color : ''}` }}
-        className={'bg-tundora w-0.5 h-[4.5rem] -50 transition-all'}
+        className={'h-[4.5rem] w-0.5 bg-tundora transition-all'}
       />
     </div>
   );

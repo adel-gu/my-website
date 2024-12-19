@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: '01',
+    id: '1',
     screenshot: '/dev-overflow.png',
     title: 'dev overflow',
     subTitle: 'Stack overflow clone',
@@ -23,7 +23,7 @@ export const projects = [
     cardBg: 'rgba(154,52,18,0.05)',
   },
   {
-    id: '02',
+    id: '2',
     screenshot: '/meta-market.png',
     title: 'Meta Market',
     subTitle: 'NFT marketplace UI website',
@@ -54,7 +54,7 @@ export const projects = [
     cardBg: 'rgba(91,33,182,0.05)',
   },
   {
-    id: '03',
+    id: '3',
     screenshot: '/room-manager.png',
     title: 'Room Manager',
     subTitle: 'Room management and reservations app',
@@ -82,7 +82,7 @@ export const projects = [
     cardBg: 'rgba(55,48,163,0.05)',
   },
   {
-    id: '04',
+    id: '4',
     screenshot: '/fintechracy.png',
     title: 'Fintechracy',
     subTitle: 'Fintechracy official website',
@@ -97,7 +97,7 @@ export const projects = [
     cardBg: 'rgba(22,101,52,0.05)',
   },
   {
-    id: '05',
+    id: '5',
     screenshot: '/chatbotify.png',
     title: 'ChatBotify Gallery',
     subTitle: 'ChatBotify Gallery website',

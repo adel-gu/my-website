@@ -18,25 +18,20 @@ type Props = {
 };
 
 const ContactCard = ({ title, icon, description, path }: Props) => {
-  const handleEmailCopy = (title: string) => {
-    if (title === 'Email') {
-    }
-  };
   return (
     <Link href={path} target="_blank">
-      <Card className="bg-background transition-all border-none shadow-2xl hover:-translate-y-1.5 hover:bg-[#1a1a1a4d] ">
+      <Card className="border-none bg-background shadow-2xl transition-all hover:-translate-y-1.5 hover:bg-[#1a1a1a4d] ">
         <CardHeader className="pb-2">
           <CardTitle>
             <Image src={icon} alt={title} width={60} height={60} />
-            {/* <Github className="text-whiteice w-[60px] h-[60px]" /> */}
           </CardTitle>
           <CardDescription>
-            <p className="text-code text-whiteice text-2xl tracking-[0.2em]">
+            <p className="text-code text-2xl tracking-[0.2em] text-white">
               {title}
             </p>
           </CardDescription>
         </CardHeader>
-        <CardFooter className="text-dovegray30">{description}</CardFooter>
+        <CardFooter className="text-gray-400">{description}</CardFooter>
       </Card>
     </Link>
   );

@@ -14,9 +14,9 @@ const Hero = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col-reverse gap-8 mt-12 md:flex-row md:justify-center md:gap-20 lg:gap-32">
-        <div className="flex flex-col items-start gap-4 w-fit">
-          <p className="font-Silkscreen text-gray-400 md:text-2xl font-normal uppercase md:mt-8">
+      <div className="mt-12 flex flex-col-reverse gap-8 md:flex-row md:justify-center md:gap-20 lg:gap-32">
+        <div className="flex w-fit flex-col items-start gap-4">
+          <p className="font-Silkscreen font-normal uppercase text-gray-400 md:mt-8 md:text-2xl">
             adel.g · software engineer
           </p>
           <div>
@@ -24,7 +24,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/adelguitoun/"
               target="_blank"
             >
-              <AnimatedGradientText className="hover:cursor-pointer px-5 py-2 text-lg rounded-full">
+              <AnimatedGradientText className="rounded-full px-5 py-2 text-lg hover:cursor-pointer">
                 🤝 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-400" />{' '}
                 <span
                   className={cn(
@@ -39,25 +39,25 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap gap-2 md:flex-col">
-          <p className="font-Silkscreen text-gray-400 font-normal uppercase">
+          <p className="font-Silkscreen font-normal uppercase text-gray-400">
             Building...
           </p>
-          <p className="font-Silkscreen bg-celtic text-[18px] font-normal uppercase rounded-md px-2 w-fit">
+          <p className="w-fit rounded-md bg-celtic px-2 font-Silkscreen text-[18px] font-normal uppercase">
             <span className="text-oceangreen">Well designed</span>
           </p>
-          <p className="font-Silkscreen bg-downriver text-[18px] font-normal uppercase rounded-md px-2 w-fit">
+          <p className="w-fit rounded-md bg-downriver px-2 font-Silkscreen text-[18px] font-normal uppercase">
             <span className="text-dodgerblue">well architected</span>
           </p>
-          <p className="font-Silkscreen bg-antiquebronze text-[18px] font-normal uppercase rounded-md px-2 w-fit">
+          <p className="w-fit rounded-md bg-antiquebronze px-2 font-Silkscreen text-[18px] font-normal uppercase">
             <span className="text-foreground">and scalable</span>
           </p>
-          <p className="font-Silkscreen bg-revolver text-[18px] font-normal uppercase rounded-md px-2 w-fit">
-            <span className="text-amethyst">web apps</span>
+          <p className="w-fit rounded-md bg-revolver px-2 font-Silkscreen text-[18px] font-normal uppercase">
+            <span className="text-violet-400/85">web apps</span>
           </p>
         </div>
       </div>
 
-      <div className="absolute -z-20 top-0 h-full w-full overflow-hidden [mask-image:radial-gradient(900px_circle_at_top,#000,transparent)] opacity-50 pointer-events-none">
+      <div className="pointer-events-none absolute top-0 -z-20 size-full overflow-hidden opacity-50 [mask-image:radial-gradient(900px_circle_at_top,#000,transparent)]">
         <AnimatedGridPattern
           numSquares={120}
           maxOpacity={0.2}
@@ -72,12 +72,12 @@ const Hero = () => {
             'rgba(250, 147, 78, 1)',
             'rgba(54, 158, 255, 1)',
           ]}
-          className="h-[150%] inset-y-[-30%] inset-x-[4.5px]"
+          className="inset-x-[4.5px] inset-y-[-30%] h-[150%]"
         />
       </div>
 
-      <div className="absolute inset-0 -z-10 [mask-image:linear-gradient(#000_50%,transparent)] pointer-events-none">
-        <div className="absolute inset-0 grid-pattern pointer-events-none" />
+      <div className="pointer-events-none absolute inset-0 -z-10 [mask-image:linear-gradient(#000_50%,transparent)]">
+        <div className="grid-pattern pointer-events-none absolute inset-0" />
       </div>
     </section>
   );
