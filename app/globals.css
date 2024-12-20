@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: hsl(0, 0%, 8%);
+}
+
 @layer base {
   :root {
     /* COLORS */
@@ -76,7 +80,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-Inter text-xl;
+    @apply text-foreground font-Inter text-xl;
   }
 }
 
